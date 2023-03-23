@@ -1,0 +1,72 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #cbe4de;
+}
+
+.titulo {
+  color: #2e4f4f;
+  font-size: 40px;
+}
+
+.subtitulo {
+  color: #2e4f4f;
+  font-size: 24px;
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+  width: 180px;
+  height: 100px;
+  background-color: #2c3333;
+  color: #cbe4de;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+  border: 1px solid rgb(48, 54, 65);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tarjeta-de-mokepon:hover {
+  background-color: #2e4f4f;
+}
+
+.tarjeta-de-mokepon img {
+  width: 80px;
+}
+
+input {
+  display: none;
+}
+
+.boton-tarjetas {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #2c3333;
+  color: #2c3333;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.boton-tarjetas:hover {
+  background-color: #2c3333;
+  color: #cbe4de;
+}
