@@ -70,3 +70,25 @@ input {
   background-color: #2c3333;
   color: #cbe4de;
 }
+
+#seleccionar-ataque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton-de-ataque {
+  background-color: #2e4f4f;
+  color: #cbe4de;
+  box-sizing: border-box;
+  padding: 10px;
+  border-color: transparent;
+  border-radius: 20px;
+  width: 100px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.boton-de-ataque:hover {
+  background-color: #2c3333;
+}
