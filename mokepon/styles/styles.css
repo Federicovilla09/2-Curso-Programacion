@@ -111,3 +111,8 @@ input {
   color: #2c3333;
   font-family: "Roboto", sans-serif;
 }
+
+.ataques {
+  display: grid;
+  grid-template-columns: 100px 100px;
+}
