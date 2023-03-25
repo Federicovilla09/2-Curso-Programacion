@@ -92,3 +92,22 @@ input {
 .boton-de-ataque:hover {
   background-color: #2c3333;
 }
+
+#mensajes {
+  width: 280px;
+  background-color: #2e4f4f;
+  color: #cbe4de;
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#boton-reiniciar {
+  border: none;
+  color: #2c3333;
+  font-family: "Roboto", sans-serif;
+}

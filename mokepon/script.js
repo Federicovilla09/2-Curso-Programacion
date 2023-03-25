@@ -129,26 +129,25 @@ function revisarVidas() {
 }
 
 function crearMensaje(resultado) {
-  let sectionMensaje = document.getElementById("mensajes");
-  let parrafo = document.createElement("p");
+  let sectionMensaje = document.getElementById("resultado");
+  let ataquesDelJugador = document.getElementById("ataques-del-jugador");
+  let ataquesDelEnemigo = document.getElementById("ataques-del-enemigo");
 
-  parrafo.innerHTML =
-    "Tu mascota ataco con " +
-    ataqueJugador +
-    ", la mascota del enemigo atacó con " +
-    ataqueEnemigo +
-    " - " +
-    resultado;
-  sectionMensaje.appendChild(parrafo);
+  let nuevoAtaqueDelJugador = document.createElement("p");
+  let nuevoAtaqueDelEnemigo = document.createElement("p");
+
+  sectionMensaje.innerHTML = resultado;
+  nuevoAtaqueDelJugador.innerHTML = ataqueJugador;
+  nuevoAtaqueDelEnemigo.innerHTML = ataqueEnemigo;
+
+  ataquesDelJugador.appendChild(nuevoAtaqueDelJugador);
+  ataquesDelEnemigo.appendChild(nuevoAtaqueDelEnemigo);
 }
 
 function crearMensajeFinal(resultadoFinal) {
-  let sectionMensaje = document.getElementById("mensajes");
-  let parrafo = document.createElement("p");
+  let sectionMensaje = document.getElementById("resultado");
 
-  parrafo.innerHTML = resultadoFinal;
-
-  sectionMensaje.appendChild(parrafo);
+  sectionMensaje.innerHTML = resultadoFinal;
 
   let botonFuego = document.getElementById("boton-fuego");
   botonFuego.disabled = true;
